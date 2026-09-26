@@ -1,0 +1,10 @@
+numpy
+
+# Optional: enables classify/sentiment/escalate/draft_reply to run on
+# real LLM calls instead of the built-in rule-based mock.
+groq            # free-tier LLM (see groq_agents.py) -- highest priority if key is set
+typesafe-sdk    # Jev structured-decision model (used only if Groq's key isn't set)
+python-dotenv   # loads .env locally; not needed on Streamlit Cloud (secrets become env vars)
+
+# Optional: only needed to run/deploy the web UI (app.py)
+streamlit
